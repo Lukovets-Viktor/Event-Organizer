@@ -1,0 +1,33 @@
+.create-event-form {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  margin: 50px auto;
+
+  &__submit-btn.button {
+    margin: 0;
+  }
+
+  .types-dropdown {
+    height: 38px;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    border: 1px solid rgba(34,36,38,.15);
+    font: 400 13.3333px Arial;
+    padding-left: 10px;
+    cursor: pointer;
+
+    &__option {
+      color: black;
+
+      &_add {
+        background-color: #e0e1e2;
+      }
+    }
+  }
+}
+
+.date-picker {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
