@@ -35,29 +35,26 @@ const ExtraServices = ({
         className="services-btn"
       />
       <div hidden={!visible} className="checkboxes">
-        {!event.securityAssistanceAdded
-          ? <Checkbox 
+        {!event.securityAssistanceAdded &&
+          <Checkbox 
             checked={securityAssistanceSelected} 
             onChange={() => toggleSecurityAssistance(!securityAssistanceSelected)}
             label={<label>Security assistance</label>}
-            /> 
-          : null
+          /> 
         }
-        {!event.medicalAssistanceAdded
-          ? <Checkbox  
+        {!event.medicalAssistanceAdded &&
+          <Checkbox  
             checked={medicalAssistanceSelected} 
             onChange={() => toggleMedicalAssistance(!medicalAssistanceSelected)}
             label={<label>Medical assistance</label>} 
-            /> 
-          : null
+          /> 
         }
-        {!event.govApprovalAdded
-          ? <Checkbox 
+        {!event.govApprovalAdded &&
+          <Checkbox 
             checked={govApprovalSelected} 
             onChange={() => toggleGovApproval(!govApprovalSelected)}
             label={<label>Gov approval</label>} 
-            /> 
-            : null
+          /> 
         }
         <Button onClick={handleSubmit} className="services-btn">Submit</Button>
       </div>

@@ -12,11 +12,6 @@ const currentDate = () => {
   return `${yyyy}-${mm.toString().padStart(2, '0')}-${dd.toString().padStart(2, '0')}`;
 };
 
-export const convertStringToDate = (dateString) => {
-  const [year, month, day] = dateString.split('-');
-  return new Date(year, month - 1, day);
-};
-
 const CreateEventForm = ({ addEvent, events, eventTypes, addEventType }) => {
   const alert = useAlert();
   const [addingNewType, toggleAddingNewType] = useState(false);
@@ -81,6 +76,7 @@ const CreateEventForm = ({ addEvent, events, eventTypes, addEventType }) => {
       setEventEndDate(e.target.value)
     } else {
       alert.show("Event cannot end before it was started");
+      setEventEndDate('');
     }
   };
 

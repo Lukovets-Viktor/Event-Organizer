@@ -44,17 +44,14 @@ const Services = ({ event, events, addExtraService }) => {
 
   return (
     <div className="orders">
-      {event.securityAssistanceAdded 
-        ? <pre><span className="checkmark">&#10003;</span> Security assistance</pre> 
-        : null
+      {event.securityAssistanceAdded &&
+        <pre><span className="checkmark">&#10003;</span> Security assistance</pre> 
       }
-      {event.medicalAssistanceAdded 
-        ? <pre><span className="checkmark">&#10003;</span> Medical assistance</pre> 
-        : null
+      {event.medicalAssistanceAdded &&
+        <pre><span className="checkmark">&#10003;</span> Medical assistance</pre> 
       }
-      {event.govApprovalAdded 
-        ? <pre><span className="checkmark">&#10003;</span> Gov approval</pre> 
-        : null
+      {event.govApprovalAdded &&
+        <pre><span className="checkmark">&#10003;</span> Gov approval</pre> 
       }
       {!event.securityAssistanceAdded 
           || !event.medicalAssistanceAdded 

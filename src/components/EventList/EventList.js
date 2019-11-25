@@ -82,9 +82,9 @@ const EventList = ({ events }) => {
           </label>
         </div>
         <Checkbox  
-        checked={filteringOrders} 
-        onChange={() => togglefilteringOrders(!filteringOrders)}
-        label={<label>Show events with orders only</label>} 
+          checked={filteringOrders} 
+          onChange={() => togglefilteringOrders(!filteringOrders)}
+          label={<label>Show events with orders only</label>} 
         /> 
       </div>
       <Divider hidden />
