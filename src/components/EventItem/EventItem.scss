@@ -1,0 +1,42 @@
+.event-item {
+  background-color: white;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding: 10px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+
+  &__heading {
+    font-size: medium;
+    margin-bottom: 0;
+  }
+
+  &__attendees-info {
+    font-size: 12px;
+  }
+
+  &__btn {
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+
+    &:hover {
+      background-color: #cacaca;
+    }
+
+    &_increase {
+      margin-left: 5px;
+      margin-right: 2px;
+      color: green;
+    }
+
+    &_decrease {
+      color: red;
+    }
+  }
+}

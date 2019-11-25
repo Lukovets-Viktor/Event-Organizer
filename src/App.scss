@@ -1,0 +1,47 @@
+html, body {
+  background-color: #efefef;
+}
+
+html,
+body,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: lightgray;
+  font-weight: bold;
+}
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+
+    &:hover {
+      background-color: #e4e4e4;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    color: black;
+
+    &.active {
+      background-color: white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+}
